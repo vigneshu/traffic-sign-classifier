@@ -1,4 +1,11 @@
 
+[//]: # (Image References)
+
+[image1]: ./images/1.png "Visualization"
+[image2]: ./images/2.png "Sample count"
+[image3]: ./images/3.png "Sample count after adding samples"
+[image4]: ./images/4.png "Normalization"
+[image5]: ./images/5.png "Custom test images"
 
 ## Rubric Points
 Here I will consider the [rubric points](https://review.udacity.com/#!/rubrics/481/view) individually and describe how I addressed each point in my implementation.  
@@ -38,7 +45,10 @@ Here is an exploratory visualization of the dataset.  It iterates through each c
 Next, I use the y_train to get the class count and plot a bar graph. You can see this in cell 4.
 
 
-![](http://imgur.com/a/aDpLF)
+![alt text][image1]
+![alt text][image2]
+![alt text][image3]
+
 ### Design and Test a Model Architecture
 
 #### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
@@ -49,7 +59,7 @@ As a first step, I also created more data from the training datasset. The datase
 Finally, I normalised the image because it helps speed up learning and gives better results. 
 
 
-![](http://imgur.com/a/XBojX)
+![alt text][image4]
 
 The difference between the original data set and the augmented data set is the following ... 
 
@@ -113,7 +123,8 @@ LeNet architecture was used.
 Here are five German traffic signs that I found on the web:
 
 
-![](http://imgur.com/a/cT5wJ)
+![alt text][image5]
+
 
 
 #### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
